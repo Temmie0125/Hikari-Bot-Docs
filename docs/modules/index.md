@@ -13,6 +13,7 @@ pageClass: module-index
 
 | 模块 | 简介 | 文档 |
 | ---- | ---- | ---- |
+| 米哈游查询 | 原神 / 星穹铁道 / 绝区零 面板查询与游戏工具 | [米哈游查询](/modules/mihoyo) |
 | 名场面 | 基于关键词的图片收集与调用：群员投稿、随时调用经典发言与专题表情包（仅官方群与私聊开放） | [名场面](/modules/famous) |
 | 音游查分 · Phigros | 查分、成绩查询、谱面预览与谱面文件提取 | [Phigros](/modules/phigros) |
 | 音游查分 · 舞萌DX | 查分（水鱼 / 落雪查分器数据） | [舞萌DX](/modules/maimai) |

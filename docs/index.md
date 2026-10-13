@@ -24,6 +24,8 @@ features:
       height: 36
     title: 米哈游游戏查询
     details: 原神 / 崩坏：星穹铁道 / 绝区零 角色面板与游戏数据查询，支持 UID 查询与全量刷新。
+    link: /modules/mihoyo
+    linkText: 查看文档
   - icon:
       src: /icon/phi.png
       width: 36
