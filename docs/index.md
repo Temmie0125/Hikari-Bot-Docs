@@ -3,8 +3,9 @@ layout: home
 
 hero:
   name: "Hikari-Bot"
-  text: "音游/日常/娱乐综合QQ机器人"
-  tagline: 基于 Yunzai 构建的 QQ 官方 Bot 公开服务 · 无需自行部署，加入官方群即可使用
+  # text字号过大，且下方tagline和页面底部信息有重复，移动至tagline写原本的text
+  # text: "音游/日常/娱乐综合QQ机器人" 
+  tagline: 音游/日常/娱乐综合QQ机器人
   actions:
     - theme: brand
       text: 快速开始 →
