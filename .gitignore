@@ -3,3 +3,6 @@ docs/.vitepress/dist/
 docs/.vitepress/cache/
 .DS_Store
 *.local
+
+# 私有资源：无水印原图与隐水印参数（勿公开）
+assets-src/
