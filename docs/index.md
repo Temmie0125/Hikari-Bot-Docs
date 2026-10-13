@@ -43,7 +43,10 @@ features:
       height: 36
     title: Milthm 查分
     details: 通过 OIDC 授权或上传游戏存档，查询乐曲成绩与个人数据。
-  - icon: 📅
+  - icon:
+      src: /icon/schedule.png
+      width: 36
+      height: 36
     title: 课表管理
     details: 支持 Wakeup 口令、ICS 日历、拾光 JSON 导入，群内课表一键查询。
   - icon:
