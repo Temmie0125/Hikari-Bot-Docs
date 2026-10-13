@@ -26,9 +26,9 @@ order: 20
 
 | 命令 | 说明 | 示例 |
 | ---- | ---- | ---- |
-| `phi b19` | 查询 Best19 数据 | `@机器人 phi b19` |
-| `phi info` | 查询个人成绩概览 | `@机器人 phi info` |
-| `phi <曲名>` | 查询单曲成绩与曲绘 | `@机器人 phi 歌名` |
+| `phi b19` | 查询 Best19 数据 | `@Hikari phi b19` |
+| `phi info` | 查询个人成绩概览 | `@Hikari phi info` |
+| `phi <曲名>` | 查询单曲成绩与曲绘 | `@Hikari phi 歌名` |
 
 ## 注意事项
 
