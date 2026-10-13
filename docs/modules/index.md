@@ -17,4 +17,5 @@ pageClass: module-index
 | 音游查分 · Phigros | 查分、成绩查询、谱面预览与谱面文件提取 | [Phigros](/modules/phigros) |
 | 音游查分 · 舞萌DX | 查分（水鱼 / 落雪查分器数据） | [舞萌DX](/modules/maimai) |
 | 音游查分 · Milthm | 查分（OIDC 授权 / 存档导入） | [Milthm](/modules/milthm) |
+| 课表管理 | 课表导入 / 查询 / 推送订阅，内置生日祝福 | [课表管理](/modules/schedule) |
 | 模板示例 | 模块文档的标准写法示例 | [模板示例](/modules/example) |

@@ -37,19 +37,25 @@ features:
       width: 48
       height: 48
     title: 舞萌DX 查分
-    details: 对接水鱼 / 落雪查分器，支持 QQ 号绑定与 OAuth 授权，成绩一目了然。
+    details: 对接水鱼 / 落雪查分器，支持 OAuth 授权与好友码绑定，B50 一目了然。
+    link: /modules/maimai
+    linkText: 查看文档
   - icon:
       src: /icon/mil.png
       width: 36
       height: 36
     title: Milthm 查分
     details: 通过 OIDC 授权或上传游戏存档，查询乐曲成绩与个人数据。
+    link: /modules/milthm
+    linkText: 查看文档
   - icon:
       src: /icon/schedule.png
       width: 36
       height: 36
     title: 课表管理
-    details: 支持 Wakeup 口令、ICS 日历、拾光 JSON 导入，群内课表一键查询。
+    details: 支持 ICS 日历、星链口令、拾光 JSON 导入，课表订阅提醒与生日祝福。
+    link: /modules/schedule
+    linkText: 查看文档
   - icon:
       src: /icon/entertainment.png
       width: 36
