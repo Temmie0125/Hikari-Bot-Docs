@@ -10,7 +10,7 @@ title: 关于
 
 ## 简介
 
-**Hikari-Bot** 是基于 [Yunzai Bot](https://github.com/TimeRainStarSky/Yunzai) 构建并封装的 QQ 官方平台机器人，提供音游查分、游戏数据查询、课表管理、AI 聊天与群聊总结等多种功能，以**公开托管服务**形式运营——无需自行部署，加入官方群即可使用。
+**Hikari-Bot** 是基于 [Yunzai Bot](https://github.com/TimeRainStarSky/Yunzai) 构建并封装的 QQ 官方平台机器人，提供音游查分、游戏数据查询、课表管理、媒体解析、娱乐互动等多种功能，以**公开托管服务**形式运营——无需自行部署，加入官方群即可使用。
 
 ## 加入官方群
 

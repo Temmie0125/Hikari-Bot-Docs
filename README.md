@@ -53,7 +53,7 @@ docs/
 
 - `docs/.vitepress/config.mts`：`title`（站名）、`description`、`footer`、`socialLinks` 与 `editLink` 里的 GitHub 仓库地址、`sitemap.hostname`（部署后填实际域名）；
 - `docs/index.md`：hero 区的 `name`（Bot 名称）、`tagline`、功能卡片文案；
-- 图标：替换 `docs/public/favicon.svg`（也可换成 `logo.png`，同时修改 `config.mts` 里 head 中的 icon 路径）。
+- 图标：站点图标 `docs/public/favicon.ico` 由 Bot 头像 `docs/public/Bot-Avatar.jpg` 生成；头像更换后运行 `node scripts/gen-favicon.cjs` 重新生成（使用 Yunzai 目录下的 sharp，多尺寸打包）。
 
 其余页面内容中标记了 `<!-- TODO -->` 的地方按实际情况填写。
 

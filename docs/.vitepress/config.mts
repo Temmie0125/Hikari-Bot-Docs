@@ -59,7 +59,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'Bot 文档', // TODO: 换成你的 Bot 名称
   description: 'QQ 机器人使用说明与帮助文档',
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]],
+  head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
   sitemap: { hostname: 'https://example.pages.dev' }, // TODO: 部署后改为实际域名
   lastUpdated: true,
 
