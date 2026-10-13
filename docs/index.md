@@ -63,7 +63,7 @@ features:
       width: 36
       height: 36
     title: 媒体解析与娱乐
-    details: 链接解析、名场面等趣味功能，配合消息按钮交互，点击即用。
-    link: /modules/
-    linkText: 功能一览
+    details: 网易云点歌与解析、B 站视频解析、表情包制作与各类群娱乐玩法。
+    link: /modules/media-fun
+    linkText: 查看文档
 ---
