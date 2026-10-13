@@ -10,6 +10,12 @@
   color: var(--vp-c-brand-1);
 }
 
+/* 功能一览表：模块/文档列不换行（避免四字词被折成 3+1） */
+.module-index table td:first-child,
+.module-index table td:last-child {
+  white-space: nowrap;
+}
+
 /* 关于页头像圆角与阴影 */
 .vp-doc img[alt='Hikari-Bot 头像'] {
   box-shadow: 0 4px 16px var(--vp-c-divider);

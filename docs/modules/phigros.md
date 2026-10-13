@@ -1,24 +1,34 @@
 ---
-title: 音游查分
+title: 音游查分 · Phigros
 order: 20
 ---
 
-# 音游查分（Phigros）
+# 音游查分 · Phigros
 
 基于 [phi-plugin](https://github.com/Catrong/phi-plugin) 的 Phigros 查分模块，提供上游插件的全部标准功能：成绩查询、RKS/Best 分表、曲目图鉴与别名、段位、猜曲游戏等。在此基础上，本 Bot 额外扩展并接管了**谱面预览**与**谱面文件提取**两个功能（详见下文）。
 
 ## 绑定
 
-查分类功能需要先绑定你的 Phigros 账号：
+查分类功能需要先绑定你的 Phigros 账号，凭据为游戏的 **sessionToken（会话码）**。两种绑定方式：
+
+### 方式一：扫码绑定（推荐）
+
+发送 `#phi bind qrcode`，机器人会返回二维码，使用 **TapTap 扫码**即可自动获取会话码并完成绑定，无需手动操作。
+
+### 方式二：手动绑定
+
+自行获取 sessionToken 后直接发送 `#phi bind <会话码>` 绑定。获取方法可发送 `#phi tk help` 查看指引。
 
 | 命令 | 说明 |
 | ---- | ---- |
-| `#phi bind <会话码>` | 绑定账号 |
+| `#phi bind qrcode` | TapTap 扫码绑定（推荐） |
+| `#phi bind <会话码>` | 使用手动获取的 sessionToken 绑定 |
+| `#phi tk help` | 查看 sessionToken 获取指引 |
 | `#phi update` | 手动刷新成绩数据 |
 | `#phi unbind` | 解除绑定 |
 
 ::: warning 会话码安全
-会话码（sessionToken）相当于账号凭证，**务必通过私聊发送给机器人**，切勿在群聊中透露。详见[隐私政策](/about/privacy)。
+sessionToken 相当于账号凭证，**务必通过私聊发送给机器人**，切勿在群聊中透露。详见[隐私政策](/about/privacy)。
 :::
 
 ## 常用命令
@@ -89,6 +99,6 @@ order: 20
 ## 注意事项
 
 - 查分类命令均需先[绑定](#绑定)；
-- 成绩数据并非实时同步：游戏端成绩上传与查分接口同步存在延迟，可用 `#phi update` 手动刷新；
+- phi-plugin 会尝试自动拉取最新存档；如果查询结果与游戏内不一致，请尝试手动执行 `#phi update`，或检查游戏内的存档同步状态是否正常；
 - 别名查询支持社区维护的曲目别名，也可以通过别名提案参与公投；
 - 查询频率过高可能触发限制，请合理使用。

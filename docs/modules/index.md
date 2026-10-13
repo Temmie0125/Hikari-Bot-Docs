@@ -1,5 +1,6 @@
 ---
 title: 功能一览
+pageClass: module-index
 ---
 
 # 功能一览
@@ -13,5 +14,7 @@ title: 功能一览
 | 模块 | 简介 | 文档 |
 | ---- | ---- | ---- |
 | 名场面 | 基于关键词的图片收集与调用：群员投稿、随时调用经典发言与专题表情包（仅官方群与私聊开放） | [名场面](/modules/famous) |
-| 音游查分 | Phigros 查分、成绩查询、谱面预览与谱面文件提取 | [音游查分](/modules/phigros) |
+| 音游查分 · Phigros | 查分、成绩查询、谱面预览与谱面文件提取 | [Phigros](/modules/phigros) |
+| 音游查分 · 舞萌DX | 查分（水鱼 / 落雪查分器数据） | [舞萌DX](/modules/maimai) |
+| 音游查分 · Milthm | 查分（OIDC 授权 / 存档导入） | [Milthm](/modules/milthm) |
 | 模板示例 | 模块文档的标准写法示例 | [模板示例](/modules/example) |
