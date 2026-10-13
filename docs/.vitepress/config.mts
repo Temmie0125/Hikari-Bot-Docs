@@ -3,11 +3,9 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// ==================== TODO 站点信息占位符，部署前替换 ====================
-// 1. title / description / footer 里的 Bot 名称
-// 2. socialLinks / editLink 里的 GitHub 仓库地址
-// 3. sitemap.hostname 部署后改为实际域名（如 https://xxx.pages.dev）
-// ========================================================================
+// 站点信息：socialLinks/editLink 已指向 Temmie0125/Hikari-Bot-Docs；
+// sitemap.hostname 目前按 CF Pages 默认项目名（hikari-bot-docs.pages.dev）预填，
+// 若部署时项目名不同或绑定自定义域名，需回来同步修改。
 
 const modulesDir = fileURLToPath(new URL('../modules', import.meta.url))
 
@@ -57,10 +55,10 @@ const aboutSidebar: DefaultTheme.SidebarItem[] = [
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Bot 文档', // TODO: 换成你的 Bot 名称
-  description: 'QQ 机器人使用说明与帮助文档',
+  title: 'Hikari-Bot',
+  description: 'Hikari-Bot 使用文档与帮助中心：音游/日常/娱乐综合QQ机器人',
   head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
-  sitemap: { hostname: 'https://example.pages.dev' }, // TODO: 部署后改为实际域名
+  sitemap: { hostname: 'https://hikari-bot-docs.pages.dev' },
   lastUpdated: true,
 
   themeConfig: {
@@ -91,7 +89,7 @@ export default defineConfig({
       },
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/yourname/bot-docs' }], // TODO: 换成实际仓库
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Temmie0125/Hikari-Bot-Docs' }],
 
     footer: {
       message:
@@ -109,7 +107,7 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
 
     editLink: {
-      pattern: 'https://github.com/yourname/bot-docs/edit/main/docs/:path', // TODO: 换成实际仓库
+      pattern: 'https://github.com/Temmie0125/Hikari-Bot-Docs/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
   },

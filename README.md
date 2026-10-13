@@ -47,23 +47,17 @@ docs/
 
 **侧边栏自动更新**：`config.mts` 会扫描 `modules/` 目录自动生成侧边栏，增删模块页面不需要改配置。
 
-## 如何修改站点信息（部署前必做的占位符替换）
+## 站点信息与品牌
 
-全站占位符集中在两处：
-
-- `docs/.vitepress/config.mts`：`title`（站名）、`description`、`footer`、`socialLinks` 与 `editLink` 里的 GitHub 仓库地址、`sitemap.hostname`（部署后填实际域名）；
-- `docs/index.md`：hero 区的 `name`（Bot 名称）、`tagline`、功能卡片文案；
+- 站点标题、描述、GitHub 链接（socialLinks/editLink）、sitemap 域名集中在 `docs/.vitepress/config.mts`；`sitemap.hostname` 按 CF Pages 默认项目名预填（`hikari-bot-docs.pages.dev`），部署后如项目名不同或绑定了自定义域名，需回来同步修改；
+- 首页 hero 文案与功能卡片在 `docs/index.md`；
 - 图标：站点图标 `docs/public/favicon.ico` 由 Bot 头像 `docs/public/Bot-Avatar.jpg` 生成；头像更换后运行 `node scripts/gen-favicon.cjs` 重新生成（使用 Yunzai 目录下的 sharp，多尺寸打包）。
 
-其余页面内容中标记了 `<!-- TODO -->` 的地方按实际情况填写。
+页面内容中标记了 `<!-- TODO -->` 的地方按实际情况填写。
 
 ## 部署到 Cloudflare Pages
 
-1. 在 GitHub 新建**公开或私有仓库**（如 `bot-docs`），推送本目录：
-   ```bash
-   git remote add origin https://github.com/<你的用户名>/bot-docs.git
-   git push -u origin main
-   ```
+1. 代码仓库：[Temmie0125/Hikari-Bot-Docs](https://github.com/Temmie0125/Hikari-Bot-Docs)（SSH：`git@github.com:Temmie0125/Hikari-Bot-Docs.git`），本地已关联 `origin`，直接 `git push` 即可；
 2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers 和 Pages** → **创建** → **Pages** → **连接到 Git**，选择刚推送的仓库；
 3. 构建设置：
    - 框架预设：`VitePress`（没有就选 None）
