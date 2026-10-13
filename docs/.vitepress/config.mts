@@ -58,7 +58,7 @@ export default defineConfig({
   title: 'Hikari-Bot',
   description: 'Hikari-Bot 使用文档与帮助中心：音游/日常/娱乐综合QQ机器人',
   head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
-  sitemap: { hostname: 'https://hikari-bot-docs.pages.dev' },
+  sitemap: { hostname: 'https://docs.hikaribot.cn' },
   lastUpdated: true,
 
   themeConfig: {

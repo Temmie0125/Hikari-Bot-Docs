@@ -65,18 +65,25 @@ docs/
 
 页面内容中标记了 `<!-- TODO -->` 的地方按实际情况填写。
 
-## 部署到 Cloudflare Pages
+## 部署到阿里云 ESA Pages
+
+托管平台为**阿里云 ESA Pages**（公测期免费），自定义域名 `docs.hikaribot.cn`。
 
 1. 代码仓库：[Temmie0125/Hikari-Bot-Docs](https://github.com/Temmie0125/Hikari-Bot-Docs)（SSH：`git@github.com:Temmie0125/Hikari-Bot-Docs.git`），本地已关联 `origin`，直接 `git push` 即可；
-2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers 和 Pages** → **创建** → **Pages** → **连接到 Git**，选择刚推送的仓库；
-3. 构建设置：
-   - 框架预设：`VitePress`（没有就选 None）
-   - 构建命令：`pnpm run docs:build`
+2. 阿里云控制台开通 **边缘安全加速 ESA**，并开通「函数和 Pages」服务（公测免费）；
+3. 创建 Pages 项目 → 连接 GitHub 仓库 `Hikari-Bot-Docs`（`main` 分支）；
+4. 构建设置：
+   - 构建命令：`npm install && npm run docs:build`（ESA 构建机用 npm 最稳；也可 corepack 启用 pnpm）
    - 构建输出目录：`docs/.vitepress/dist`
-4. 点保存并部署，约一分钟后即可通过 `https://<项目名>.pages.dev` 访问；
-5. 之后每次 `git push` 到 `main`，Cloudflare 会自动重新构建发布。
+   - Node 版本：≥ 18（有选项则选 22）
+5. 部署完成先用临时测试域名验证页面；
+6. 绑定自定义域名 `docs.hikaribot.cn`：站点加速区域**免备案方案选「全球（不含中国内地）」**；按提示在域名 DNS 处添加 CNAME 记录，证书自动签发；
+7. 之后每次 `git push` 到 `main` 自动重新构建发布；
+8. `sitemap.hostname` 已预填 `https://docs.hikaribot.cn`（`config.mts`）。
 
-> 自定义域名：目前没有域名可先用 `*.pages.dev`；日后购买域名并将 NS 托管到 Cloudflare 后，在 Pages 项目 → 自定义域 中添加即可，证书自动签发。
+> **大陆加速与备案**：ESA 加速区域含「中国内地」时域名必须完成 ICP 备案；备案需阿里云**备案服务码**（来自账号下符合条件的大陆云产品如 ECS / 轻量应用服务器，或单独购买）。建议先免备案上线，国内访问不满意再走备案：[阿里云备案平台](https://beian.aliyun.com)。备案通过后页脚需悬挂备案号（`config.mts` footer 预留）。
+>
+> 备选：Cloudflare Pages 亦可托管（构建命令 `pnpm run docs:build`，输出目录同上），同样免备案。
 
 ## 搜索说明
 
