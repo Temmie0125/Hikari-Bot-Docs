@@ -33,8 +33,8 @@ features:
     linkText: 查看文档
   - icon:
       src: /icon/maimai.png
-      width: 36
-      height: 36
+      width: 48
+      height: 48
     title: 舞萌DX 查分
     details: 对接水鱼 / 落雪查分器，支持 QQ 号绑定与 OAuth 授权，成绩一目了然。
   - icon:
