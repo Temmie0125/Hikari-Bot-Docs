@@ -49,6 +49,12 @@ const startSidebar: DefaultTheme.SidebarItem[] = [
   { text: '常见问题', link: '/start/faq' },
 ]
 
+const aboutSidebar: DefaultTheme.SidebarItem[] = [
+  { text: '关于', link: '/about/' },
+  { text: '用户协议', link: '/about/terms' },
+  { text: '隐私政策', link: '/about/privacy' },
+]
+
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Bot 文档', // TODO: 换成你的 Bot 名称
@@ -68,6 +74,7 @@ export default defineConfig({
     sidebar: {
       '/start/': startSidebar,
       '/modules/': moduleSidebar,
+      '/about/': aboutSidebar,
     },
 
     search: {
@@ -87,8 +94,9 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/yourname/bot-docs' }], // TODO: 换成实际仓库
 
     footer: {
-      message: '基于 Yunzai 构建的 QQ 机器人',
-      copyright: 'Copyright © 2026 Bot', // TODO: 换成你的署名
+      message:
+        '基于 Yunzai 构建的 QQ 机器人 · <a href="/about/terms.html">用户协议</a> · <a href="/about/privacy.html">隐私政策</a>',
+      copyright: 'Copyright © 2026 Hikari-Bot', // TODO: 换成你的署名
     },
 
     outline: { level: [2, 3], label: '本页目录' },

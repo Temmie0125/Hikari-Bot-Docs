@@ -1,0 +1,16 @@
+/* 页脚协议链接：跟随页脚文字颜色，悬停变主题色 */
+.VPFooter .message a {
+  color: var(--vp-c-text-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s;
+}
+
+.VPFooter .message a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* 关于页头像圆角与阴影 */
+.vp-doc img[alt='Hikari-Bot 头像'] {
+  box-shadow: 0 4px 16px var(--vp-c-divider);
+}
