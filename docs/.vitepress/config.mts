@@ -93,8 +93,10 @@ export default defineConfig({
 
     footer: {
       message:
-        '基于 Yunzai 构建的 QQ 机器人 · <a href="/about/terms.html">用户协议</a> · <a href="/about/privacy.html">隐私政策</a>',
-      copyright: 'Copyright © 2026 Hikari-Bot', // TODO: 换成你的署名
+        '基于 Yunzai 构建的 QQ 机器人 · <a href="/about/terms.html">用户协议</a> · <a href="/about/privacy.html">隐私政策</a> · <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备2026088502号</a>',
+      // 公安备案通过后，在下面 message 末尾追加（recordcode 换成公安备案号数字部分）：
+      // ' · <a href="https://beian.mps.gov.cn/#/query/webSearch?code=xxxxxxxxxx" target="_blank" rel="noopener noreferrer">浙公网安备 xxxxxxxxxxxx号</a>'
+      copyright: 'Copyright © 2026 Hikari-Bot',
     },
 
     outline: { level: [2, 3], label: '本页目录' },
