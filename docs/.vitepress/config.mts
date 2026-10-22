@@ -43,6 +43,7 @@ const moduleSidebar: DefaultTheme.SidebarItem[] = [
 
 const startSidebar: DefaultTheme.SidebarItem[] = [
   { text: '开始使用', link: '/start/' },
+  { text: '添加须知', link: '/start/add' },
   { text: 'QQ 官方 Bot 使用须知', link: '/start/qqbot' },
   { text: '常见问题', link: '/start/faq' },
 ]
