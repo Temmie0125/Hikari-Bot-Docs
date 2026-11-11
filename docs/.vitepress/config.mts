@@ -94,7 +94,7 @@ export default defineConfig({
 
     footer: {
       message:
-        '基于 Yunzai 构建的 QQ 机器人 · <a href="/about/terms.html">用户协议</a> · <a href="/about/privacy.html">隐私政策</a> · <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备2026088502号</a> · <a href="https://beian.mps.gov.cn/#/query/webSearch?code=33010602015078" rel="noreferrer" target="_blank"><img src="/备案图标.png" alt="公安备案" style="width: 14px; height: 14px; vertical-align: -2px; margin-right: 3px;" />浙公网安备33010602015078号</a>',
+        '基于 Yunzai 构建的 QQ 机器人 · <a href="/about/terms.html">用户协议</a> · <a href="/about/privacy.html">隐私政策</a> · <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备2026088502号</a> · <a href="https://beian.mps.gov.cn/#/query/webSearch?code=33010602015078" rel="noreferrer" target="_blank"><img src="/备案图标.png" alt="公安备案" style="display: inline-block; width: 14px; height: 14px; vertical-align: -2px; margin-right: 3px;" />浙公网安备33010602015078号</a>',
       copyright: 'Copyright © 2026 Hikari-Bot',
     },
 

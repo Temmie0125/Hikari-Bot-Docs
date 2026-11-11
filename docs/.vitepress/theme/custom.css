@@ -20,3 +20,12 @@
 .vp-doc img[alt='Hikari-Bot 头像'] {
   box-shadow: 0 4px 16px var(--vp-c-divider);
 }
+
+/* 页脚备案图标：主题全局 img{display:block} 会让图标独占一行并与备案号错位 */
+.VPFooter .message img {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
